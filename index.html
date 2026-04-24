@@ -1,12 +1,3 @@
-bash
-
-cd /mnt/user-data/uploads
-echo "LOGO=$(base64 -w0 bunny-logo.PNG)" > /tmp/imgs.sh
-echo "HERO=$(base64 -w0 burger-hero.jpg)" >> /tmp/imgs.sh
-echo "BG=$(base64 -w0 speisekarte-bg.jpg)" >> /tmp/imgs.sh
-echo "IMG2=$(base64 -w0 images-2.jpeg)" >> /tmp/imgs.sh
-echo "IMG3=$(base64 -w0 images.jpeg)" >> /tmp/imgs.sh
-echo "Done"
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -648,7 +639,7 @@ footer {
       </div>
     </div>
     <div class="hero-image">
-      <img src="data:image/jpeg;base64,HERO_PLACEHOLDER" alt="Bunny Burger">
+      <img src="bunny-logo.png="Bunny Logo">
       <div class="hero-badge">
         <span class="badge-big">NEU</span>
         <span class="badge-sm">MENÜS</span>
@@ -728,7 +719,7 @@ footer {
     <div class="menu-grid">
       <div class="menu-card">
         <div class="menu-card-img">
-          <img src="data:image/jpeg;base64,HERO_PLACEHOLDER" alt="Classic Bunny">
+          <img src="burger-hero.jpg" alt="Classic Bunny">
           <div class="overlay"></div>
           <div class="bestseller-badge">⭐ Bestseller</div>
         </div>
@@ -743,7 +734,7 @@ footer {
       </div>
       <div class="menu-card">
         <div class="menu-card-img">
-          <img src="data:image/jpeg;base64,HERO_PLACEHOLDER" alt="Spicy Bunny">
+          <img src="loaded-fries.jpg" alt="Spicy Bunny">
           <div class="overlay"></div>
           <div class="new-badge">🔥 NEU</div>
         </div>
