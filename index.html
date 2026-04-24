@@ -1,3 +1,12 @@
+bash
+
+cd /mnt/user-data/uploads
+echo "LOGO=$(base64 -w0 bunny-logo.PNG)" > /tmp/imgs.sh
+echo "HERO=$(base64 -w0 burger-hero.jpg)" >> /tmp/imgs.sh
+echo "BG=$(base64 -w0 speisekarte-bg.jpg)" >> /tmp/imgs.sh
+echo "IMG2=$(base64 -w0 images-2.jpeg)" >> /tmp/imgs.sh
+echo "IMG3=$(base64 -w0 images.jpeg)" >> /tmp/imgs.sh
+echo "Done"
 <!DOCTYPE html>
 <html lang="de">
 <head>
