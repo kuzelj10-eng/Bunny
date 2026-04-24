@@ -3,113 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUNNY - Smash Burger</title>
+    <title>BUNNY Smash Burger & Fries | EK Design Demo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .neon-text { text-shadow: 0 0 10px #dc2626; }
+        /* Ein kleiner, subtiler Neon-Glüheffekt für das Rot */
+        .neon-red {
+            text-shadow: 0 0 10px rgba(227, 29, 43, 0.7);
+        }
+        .neon-border {
+            box-shadow: 0 0 15px rgba(227, 29, 43, 0.5);
+        }
     </style>
 </head>
-<body class="bg-gray-950 text-white min-h-screen pb-20">
+<body class="bg-gray-950 text-white font-sans pb-32">
 
-    <header class="sticky top-0 bg-gray-900 border-b border-red-700 p-4 flex items-center justify-between z-50">
-        <div class="flex items-center gap-3">
-            <img src="bunny-logo.PNG" alt="Bunny Logo" class="w-12 h-12 rounded-full border border-red-600 bg-black object-cover">
-            <div>
-                <h1 class="text-2xl font-bold text-red-600 neon-text leading-none">BUNNY</h1>
-                <p class="text-[10px] text-yellow-500 uppercase tracking-widest font-bold">Smash Burger & Fries</p>
-            </div>
+    <header class="p-6 text-center border-b border-red-800 bg-gray-900 shadow-2xl sticky top-0 z-50">
+        <div class="flex justify-center items-center gap-4">
+            <img src="bunny-logo.PNG" alt="BUNNY" class="w-16 h-16 rounded-full border-2 border-red-600 shadow-lg object-cover">
+            <h1 class="text-6xl font-extrabold text-red-600 tracking-tighter neon-red">BUNNY</h1>
         </div>
+        <p class="text-yellow-400 font-bold uppercase tracking-widest mt-2 text-xs">Smash Burger & Fries</p>
     </header>
 
-    <div class="w-full h-48 overflow-hidden">
-        <img src="burger-hero.jpg" alt="Smash Burger" class="w-full h-full object-cover">
-    </div>
+    <section class="p-4 mt-6 text-center">
+        <div class="bg-gray-900 p-10 rounded-2xl border border-gray-800 shadow-inner flex flex-col items-center neon-border">
+            <img src="bunny-logo.PNG" alt="BUNNY Smash Burger & Fries" class="w-48 h-48 rounded-full border-4 border-red-600 shadow-2xl object-cover mb-6">
+            <h2 class="text-3xl font-serif font-black text-white tracking-tighter uppercase leading-none">Heiß. Fettig.<br/>Smash. Repeat.</h2>
+            <p class="text-gray-400 text-sm mt-3 max-w-sm">Dein regionaler Einkauf. Direkt bestellt, bar bezahlt.</p>
+        </div>
+    </section>
 
-    <main class="p-4 space-y-6">
-        
+    <main class="p-4 space-y-10">
+
         <section>
-            <h2 class="text-xl font-bold text-yellow-400 mb-3 border-l-4 border-yellow-400 pl-2">MENÜPREISE</h2>
-            <div class="space-y-3">
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <div><h3 class="font-bold">Single Bunny Menü</h3><p class="text-xs text-gray-400">Burger, Pommes, Getränk</p></div>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">9,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
+            <div class="flex items-center gap-4 mb-5">
+                <img src="burger-hero.jpg" alt="Burger" class="w-20 h-20 rounded-xl border border-gray-700 object-cover shadow-lg">
+                <h2 class="text-2xl font-bold text-red-600 uppercase tracking-tight">Klassische Menüs</h2>
+            </div>
+            
+            <div class="space-y-5">
+                <div class="bg-gray-900 p-5 rounded-xl border border-gray-800 flex justify-between items-center hover:border-yellow-400 transition-colors cursor-pointer shadow-md">
+                    <div>
+                        <h3 class="font-bold text-xl">Single Bunny Menü</h3>
+                        <p class="text-sm text-gray-400">Burger, Pommes, Getränk</p>
+                    </div>
+                    <span class="text-2xl font-bold text-yellow-400">10,00€</span>
                 </div>
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <div><h3 class="font-bold">Double Bunny Menü</h3><p class="text-xs text-gray-400">2x Burger, Pommes, Getränk</p></div>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">11,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
-                </div>
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <div><h3 class="font-bold">Loaded Fries Menü</h3><p class="text-xs text-gray-400">Loaded Fries, Fingerfood, Getränk</p></div>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">11,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
+
+                <div class="bg-gray-900 p-5 rounded-xl border border-gray-800 flex justify-between items-center hover:border-yellow-400 transition-colors cursor-pointer shadow-md">
+                    <div>
+                        <h3 class="font-bold text-xl">Double Bunny Menü</h3>
+                        <p class="text-sm text-gray-400">2x Burger, Pommes, Getränk</p>
+                    </div>
+                    <span class="text-2xl font-bold text-yellow-400">13,00€</span>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2 class="text-xl font-bold text-yellow-400 mb-3 border-l-4 border-yellow-400 pl-2">EINZELPREISE</h2>
-            <div class="space-y-3">
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <h3 class="font-bold">Burger (nach Wahl)</h3>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">6,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
+            <div class="flex items-center gap-4 mb-5">
+                <img src="loaded-fries.jpg" alt="Pommes" class="w-20 h-20 rounded-xl border border-gray-700 object-cover shadow-lg">
+                <h2 class="text-2xl font-bold text-red-600 uppercase tracking-tight">Loaded Fries</h2>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-900 p-4 rounded-xl border border-gray-800 text-center shadow-md">
+                    <p class="font-bold">Trüffel Fries</p>
+                    <p class="text-yellow-400 font-black">7,00€</p>
                 </div>
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <h3 class="font-bold">Pommes</h3>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">2,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
-                </div>
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <h3 class="font-bold">Getränk (nach Wahl)</h3>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">2,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
+                <div class="bg-gray-900 p-4 rounded-xl border border-gray-800 text-center shadow-md">
+                    <p class="font-bold">Chili Cheese Fries</p>
+                    <p class="text-yellow-400 font-black">5,00€</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2 class="text-xl font-bold text-yellow-400 mb-3 border-l-4 border-yellow-400 pl-2">FINGERFOOD</h2>
-            <div class="space-y-3">
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <h3 class="font-bold">Bunny's Chicken Tender (3 Stk)</h3>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">4,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
-                </div>
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <h3 class="font-bold">Nuggets (6 Stk)</h3>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">3,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
-                </div>
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <h3 class="font-bold">Chili Cheese Bites (6 Stk)</h3>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">3,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
-                </div>
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <h3 class="font-bold">Mozzarella Sticks (4 Stk)</h3>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">3,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
-                </div>
+        <section class="mt-14 mb-10">
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 shadow-inner text-center">
+                <h4 class="text-lg font-bold text-gray-500 uppercase mb-3">Original Menü-Karte</h4>
+                <img src="speisekarte-bg.jpg" alt="BUNNY Speisekarte Original" class="w-full h-auto rounded-lg shadow-lg border border-gray-700 mx-auto max-w-sm" onerror="this.style.display='none'"/>
+                <p class="text-gray-600 text-xs mt-3">Preise & Angebot laut Aushang.</p>
             </div>
         </section>
-
-        <section>
-            <h2 class="text-xl font-bold text-yellow-400 mb-3 border-l-4 border-yellow-400 pl-2">LOADED FRIES</h2>
-            <div class="space-y-3">
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <h3 class="font-bold">Trüffel Fries</h3>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">7,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
-                </div>
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <h3 class="font-bold">Chicken BBQ Fries</h3>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">6,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
-                </div>
-                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800 flex justify-between items-center">
-                    <h3 class="font-bold">Chili Cheese Fries</h3>
-                    <div class="flex items-center gap-3"><span class="font-bold text-yellow-500">5,90€</span><button class="bg-red-600 px-3 py-1 rounded font-bold">+</button></div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <div class="fixed bottom-0 left-0 w-full p-4 bg-gray-900 border-t border-red-700">
-        <button class="w-full bg-yellow-500 text-black font-black py-4 rounded-xl shadow-lg">
-            JETZT BESTELLEN
+    <footer class="fixed bottom-0 left-0 w-full p-4 bg-gray-950 border-t border-gray-800 shadow-[0_-10px_20px_rgba(0,0,0,0.7)] z-50">
+        <button class="w-full bg-yellow-400 text-black py-4 rounded-xl font-black text-2xl uppercase shadow-lg shadow-yellow-400/30 active:scale-95 transition-transform">
+          Warenkorb (0) - Jetzt Bestellen
         </button>
-    </div>
+    </footer>
 
 </body>
 </html>
